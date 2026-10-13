@@ -1,0 +1,32 @@
+{
+	"provideLibs": [	
+		    "libdummy_binary_libform.a-x86_64-v2.so",
+		    "libdummy_binary_libform.a.so",
+		    "libdummy_binary_libformw.a-x86_64-v2.so",
+		    "libdummy_binary_libformw.a.so",
+		    "libdummy_binary_libmenu.a-x86_64-v2.so",
+		    "libdummy_binary_libmenu.a.so",
+		    "libdummy_binary_libmenuw.a-x86_64-v2.so",
+		    "libdummy_binary_libmenuw.a.so",
+		    "libdummy_binary_libncurses++.a-x86_64-v2.so",
+		    "libdummy_binary_libncurses++.a.so",
+		    "libdummy_binary_libncurses++w.a-x86_64-v2.so",
+		    "libdummy_binary_libncurses++w.a.so",
+		    "libdummy_binary_libncurses.a-x86_64-v2.so",
+		    "libdummy_binary_libncurses.a.so",
+		    "libdummy_binary_libncursesw.a-x86_64-v2.so",
+		    "libdummy_binary_libncursesw.a.so",
+		    "libdummy_binary_libpanel.a-x86_64-v2.so",
+		    "libdummy_binary_libpanel.a.so",
+		    "libdummy_binary_libpanelw.a-x86_64-v2.so",
+		    "libdummy_binary_libpanelw.a.so",
+		    "libdummy_headers_libncurses-x86_64-v2.so",
+		    "libdummy_headers_libncurses.so",
+		    "libdummy_libncurses_dev-x86_64-v2.so",
+		    "libdummy_libncurses_dev.so"
+	],
+	"requireLibs": [	
+		    "libdummy-libncurses.so"
+	],
+	"visible": true
+}

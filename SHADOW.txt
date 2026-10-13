@@ -1,0 +1,8 @@
+shadow prebuilt repo: libncurses (target)
+  registry: org.blisslabs.ag.libncurses v6.6.20260613-1, Forgejo ag-ci apex repo, 2026-06-14
+  api-level: 32 (CI-built; branch 32-20261013)
+  upstream: external/libncurses
+  layout: *.apex blobs at root; dev payload extracted under dev-src/;
+          root Android.bp regenerated via tools/gen_extractive_bp.py on dev-src
+          (srcs rewritten to dev-src/ prefix).
+  date: 2026-10-13
