@@ -6,6 +6,36 @@ package {
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
+// Prebuilt APEX stanzas staged from the ag-ci registry (ag-sdc-ci);
+// mirrors apex/libncurses/Android.bp in prebuilt-project (srcs = local blobs).
+prebuilt_apex {
+    name: "org.blisslabs.ag.libncurses",
+    apex_name: "org.blisslabs.ag.libncurses",
+    source_apex_name: "org.blisslabs.ag.libncurses",
+    arch: {
+        x86_64: {
+            src: "org.blisslabs.ag.libncurses-6.6.20260613-1.apex",
+        },
+    },
+    filename: "org.blisslabs.ag.libncurses.apex",
+    prefer: true,
+    installable: true,
+}
+
+prebuilt_apex {
+    name: "org.blisslabs.ag.libncurses.dev",
+    apex_name: "org.blisslabs.ag.libncurses.dev",
+    source_apex_name: "org.blisslabs.ag.libncurses.dev",
+    arch: {
+        x86_64: {
+            src: "org.blisslabs.ag.libncurses.dev-6.6.20260613-1.apex",
+        },
+    },
+    filename: "org.blisslabs.ag.libncurses.dev.apex",
+    prefer: true,
+    installable: false,
+}
+
 cc_prebuilt_library_static {
     name: "libform",
     vendor_available: true,
@@ -90,6 +120,8 @@ cc_prebuilt_library_static {
     min_sdk_version: "29",
 }
 
+// libncurses is the C core archive (source consumers e.g. nano link -lncurses);
+// the C++ bindings archive is exposed as libncurses_2 (auto-generated name).
 cc_prebuilt_library_static {
     name: "libncurses",
     vendor_available: true,
@@ -99,7 +131,7 @@ cc_prebuilt_library_static {
     arch: {
         x86_64: {
             srcs: [
-                "dev-src/lib/libncurses++.a",
+                "dev-src/lib/libncurses.a",
             ],
         },
     },
@@ -141,7 +173,7 @@ cc_prebuilt_library_static {
     arch: {
         x86_64: {
             srcs: [
-                "dev-src/lib/libncurses.a",
+                "dev-src/lib/libncurses++.a",
             ],
         },
     },
