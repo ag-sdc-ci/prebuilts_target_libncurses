@@ -22,20 +22,6 @@ prebuilt_apex {
     installable: true,
 }
 
-prebuilt_apex {
-    name: "org.blisslabs.ag.libncurses.dev",
-    apex_name: "org.blisslabs.ag.libncurses.dev",
-    source_apex_name: "org.blisslabs.ag.libncurses.dev",
-    arch: {
-        x86_64: {
-            src: "org.blisslabs.ag.libncurses.dev-6.6.20260613-1.apex",
-        },
-    },
-    filename: "org.blisslabs.ag.libncurses.dev.apex",
-    prefer: true,
-    installable: false,
-}
-
 cc_prebuilt_library_static {
     name: "libform",
     vendor_available: true,
@@ -45,7 +31,7 @@ cc_prebuilt_library_static {
     arch: {
         x86_64: {
             srcs: [
-                "dev-src/lib/libform.a",
+                "lib64/libform.a",
             ],
         },
     },
@@ -66,7 +52,7 @@ cc_prebuilt_library_static {
     arch: {
         x86_64: {
             srcs: [
-                "dev-src/lib/libformw.a",
+                "lib64/libformw.a",
             ],
         },
     },
@@ -87,7 +73,7 @@ cc_prebuilt_library_static {
     arch: {
         x86_64: {
             srcs: [
-                "dev-src/lib/libmenu.a",
+                "lib64/libmenu.a",
             ],
         },
     },
@@ -108,7 +94,7 @@ cc_prebuilt_library_static {
     arch: {
         x86_64: {
             srcs: [
-                "dev-src/lib/libmenuw.a",
+                "lib64/libmenuw.a",
             ],
         },
     },
@@ -131,7 +117,7 @@ cc_prebuilt_library_static {
     arch: {
         x86_64: {
             srcs: [
-                "dev-src/lib/libncurses.a",
+                "lib64/libncurses.a",
             ],
         },
     },
@@ -152,7 +138,7 @@ cc_prebuilt_library_static {
     arch: {
         x86_64: {
             srcs: [
-                "dev-src/lib/libncurses++w.a",
+                "lib64/libncurses++w.a",
             ],
         },
     },
@@ -173,7 +159,7 @@ cc_prebuilt_library_static {
     arch: {
         x86_64: {
             srcs: [
-                "dev-src/lib/libncurses++.a",
+                "lib64/libncurses++.a",
             ],
         },
     },
@@ -194,7 +180,7 @@ cc_prebuilt_library_static {
     arch: {
         x86_64: {
             srcs: [
-                "dev-src/lib/libncursesw.a",
+                "lib64/libncursesw.a",
             ],
         },
     },
@@ -215,7 +201,7 @@ cc_prebuilt_library_static {
     arch: {
         x86_64: {
             srcs: [
-                "dev-src/lib/libpanel.a",
+                "lib64/libpanel.a",
             ],
         },
     },
@@ -236,7 +222,7 @@ cc_prebuilt_library_static {
     arch: {
         x86_64: {
             srcs: [
-                "dev-src/lib/libpanelw.a",
+                "lib64/libpanelw.a",
             ],
         },
     },
@@ -259,7 +245,7 @@ cc_library_headers {
         "//apex_available:platform",
     ],
     export_include_dirs: [
-        "dev-src/include/ncurses",
+        "include/ncurses",
     ],
     min_sdk_version: "29",
 }
@@ -275,7 +261,7 @@ cc_library_headers {
         "//apex_available:platform",
     ],
     export_include_dirs: [
-        "dev-src/include/ncursesw",
+        "include/ncursesw",
     ],
     min_sdk_version: "29",
 }
